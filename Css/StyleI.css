@@ -1,0 +1,78 @@
+/* Css/StyleI.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color de fondo claro */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #383636; /* Color de fondo del encabezado */
+    color: rgb(248, 208, 132); /* Color del texto del encabezado */
+    padding:10px; /* Espaciado interno */
+    height: 60px;
+    box-shadow: 10px 0px 0px 10px rgba(000, 000, 000, 0.7);
+}
+
+h6 {
+    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 24px; /* Tamaño de fuente */
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+}
+
+nav ul li {
+    display: inline; /* Hace que los elementos de la lista estén en línea */
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+}
+
+nav a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+    transition: all 0.5s;
+}
+nav a:hover {
+    color:  rgb(252, 219, 157);;
+}
+button.reservar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vmin;
+    font-weight: 600;
+    background-color: rgb(250, 196, 96); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    font-size:  15px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */                                                                                 
+    height: 50px;
+    width: 160px;
+    margin-right: 60px;
+}   
+
+button.reservar:hover {
+    background-color: 
+    rgb(252, 205, 125); /* Cambia el color de fondo al pasar el ratón */
+}
+
+.portada {
+    width: 100%;
+    background-color: black;
+    height: 600px;
+}
+
+.portada img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
