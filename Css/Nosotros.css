@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background-color: #fdfafa;
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    box-sizing: border-box;
+    height: auto;
+}
+
+.contenedorp{
+width: 100%;
+background-color: #fdfafa;
+height: 1650px;
+
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121; /* Color de fondo del encabezado */
+    color: rgb(248, 208, 132); /* Color del texto del encabezado */
+    padding:10px; /* Espaciado interno */
+    height: 80px;
+    box-shadow: 10px 0px 0px 10px rgba(000, 000, 000, 0.7);
+}
+
+h6 {
+    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 24px; /* Tamaño de fuente */
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+}
+
+nav ul li {
+    display: inline; /* Hace que los elementos de la lista estén en línea */
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+}
+
+nav a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+    transition: all 0.5s;
+}
+nav a:hover {
+    color:  rgb(252, 219, 157);
+    
+}
+button.reservar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vmin;
+    font-weight: 600;
+    background-color: rgb(250, 196, 96); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    font-size:  15px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */                                                    
+    height: 50px;
+    width: 160px;
+    margin-right: 60px;
+}   
+
+button.reservar a{
+    text-decoration: none;
+    color:white ;
+}
+
+button.reservar:hover {
+    background-color: 
+    rgb(252, 205, 125); /* Cambia el color de fondo al pasar el ratón */
+}
+
+.container {
+    height: 650px;
+  max-width: 1040px;
+  margin: 20px auto;
+  padding: 20px;
+ }
+
+
+.box-container{
+    display: flex;
+    gap:1.5rem;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    
+}
+
+     .box-container .box{
+       padding: 2rem;
+       text-align: center;
+       border-radius: 20px;
+       border: 2px solid  rgb(248, 208, 132);
+       height: 350px;
+       width: 450px;
+       transition: all 0.5s;
+       box-shadow: 0 5px 7px #e8b86d;
+} 
+
+   .box-container .box:hover{
+       transform: scale(1.1);
+       z-index: 2;
+   }
+
+      .box h2{
+       color: #000;
+       text-align: center;
+       font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+       font-weight: 200;
+       font-style: normal;
+       font-size: 16px;
+
+     }
+     .box h1{
+       text-align: center;
+       color: rgb(248, 208, 132);
+       font-family: "Dancing Script", cursive;
+       font-optical-sizing: auto;
+       font-weight: weight;
+       font-style: normal;
+       font-size:32px;
+
+     }
+
+
+     .menu-container {
+        height: 130%;
+        width: 90%;
+        display: flex; /* Para alinear de manera flexible */
+        flex-direction: row; /* Asegúrate de que esto esté en 'row' */
+        flex-wrap: wrap; /* Permite que las cartas se distribuyan en filas */
+    }
+    
+    .card {
+        position: relative;
+        width: 300px; /* Ancho de cada carta */
+        height: 350px; /* Altura de cada carta */
+        flex-wrap: wrap;
+        margin: 15px;  
+        align-items: center;
+        margin-left: 90px ;
+    }
+    
+    
+    .card .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+        flex-wrap: wrap;
+    }
+    
+  .card .front {
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    text-align: center; /* Alinear texto si es necesario */
+    flex-wrap: wrap;
+}
+
+    .card .front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Mantiene la imagen bien ajustada */
+        display: block; /* Asegúrate de que está configurado como bloque */
+        margin: auto; /* Esta línea a veces ayuda a centrar en ciertos casos */
+    }
+    
+    .card .front h3{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .card .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: rgb(51, 61, 66);
+        padding: 20px; /* Ajusta el padding externo */
+        color: #f3f3f3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 10px 15px #e8b86d;
+    }
+    
+    .card .back h3 {
+        font-size: 30px;
+        margin-top: 0; /* Ajusta el margin para evitar que esté demasiado arriba */
+        letter-spacing: 1px; /* Usa un solo letter-spacing */
+        margin-bottom: 10px; /* Ajusta el margin debajo del título */
+        color: #E8B86D;
+    }
+    
+    .parrafo {
+        color: #fff;
+        font-size: 18px; /* Ajusta el tamaño de la fuente */
+        line-height: 1.5; /* Mejora la legibilidad con interlineado */
+        margin: 0; /* Elimina el margen para ajustes finos */
+        padding: 0 10px; /* Agrega padding para evitar que el texto esté pegado al borde */
+    }
+    
+    .card:hover .front{
+        transform: perspective(600px) rotateY(180deg);
+    
+    }
+    
+    .card:hover .back{
+        transform: perspective(600px) rotateY(360deg);
+    
+    }
+    
+    .heading{
+        text-align: center;
+        color: #fff;
+        text-transform:uppercase;
+        padding-bottom: 3.5rem;
+        font-size: 5rem;
+        margin-top: 150px;   
+    }
+    
+    .heading span{
+        color: #e8b86d;
+        text-transform:uppercase;
+        justify-content: center;
+        margin-top: 200px;
+        font-size: 5rem;
+    }
+
+    .footer{
+        position: relative;
+        width: 100%;
+        background: #212121;
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .social-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 10px 5px;
+        flex-wrap: wrap;
+    }
+    
+    .icon-elem{
+        list-style: none;
+    }
+    
+    .icon{
+        color: white;
+        font-size: 32px;
+        display: inline-block;
+        margin: 0 10px;
+        transition: 0.5s;
+    }
+    
+    .icon:hover{
+        transform: translateY(-10px);
+        color:  rgb(252, 219, 157);
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+    
+    .menu-elem{
+        list-style: none;
+    }
+    
+    .menu-icon{
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+        text-decoration: none;
+        margin: 5px 10px;
+        transition: 0.3s;
+    }
+    
+    .menu-icon:hover{
+       color:  rgb(252, 219, 157);
+    }
+    
+    .Credit{
+        color: #fff;
+    }
+    
+    .Credit span{
+     color:  rgb(252, 219, 157);
+    }
+    

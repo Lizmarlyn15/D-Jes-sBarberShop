@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reserva tu Cita - Peluquería</title>
+     <!--custom css file link-->
+    <link rel="stylesheet" href="Css/Resevar.css">
+</head>
+<body>
+    <header> 
+        <h6> D'JesúsBarberShop </h6>
+        <nav>
+          <ul>
+          <li><a href="Index.html">Inicio</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+          <li><a href="Servicios.html ">Servicios</a></li>
+          <li><a href="Galeria.html">Galería</a></li>
+          <li><a href="Reservar.html">Reservar</a></li>
+          <li><a href="Contactos.html">Contactos</a></li>
+           <li><a href="Loginl.html">Login</a></li>
+           </ul>
+          </nav>
+                  
+          <button class="Reservar">
+            <a href="Reservar.html">RESERVAR</a>
+            <img  class= img src="Img/flecha-correcta.png">
+            <ion-icon name="arrow-round-forward"></ion-icon></button>
+          </header>
+
+          
+      <div class="contenedor">
+        <img src="Img/fo.jpeg" alt="">
+
+    <main>
+        <section class="reservation-form">
+            <h2>Reserva tu Cita</h2>
+            <form>
+
+                <input type="text" id="name" name="name" required placeholder="Nombre completo">
+
+                <input type="email" id="email" name="email" required placeholder="Coreo Electrónico">
+
+                <input type="text" id="name" name="name" required placeholder="Telefóno">
+
+                <select id="service" name="service" required>
+                    <option value="corte">Selecciona el Servicio</option>
+                    <option value="corte">Corte de Cabello</option>
+                    <option value="coloracion">Afeitado de barba </option>
+                    <option value="peinado">Peinado de Cabello</option>
+                    <option value="tratamiento">Tratamiento capilares</option>
+                    <option value="peinado">Recorte de barba</option>
+                    <option value="peinado">Masajes capilares</option>
+                </select>
+      
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required >
+
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required >
+               
+            </form>
+
+            <form id="reservationForm" onsubmit="return showModal();">
+              <button type="submit">Reservar</button>
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Formulario para reservar -->
+
+<div class="overlay" id="overlay" onclick="closeModal()"></div>
+
+<div class="modal" id="modal">
+  <h2>¡Reservado con éxito!</h2>
+  <p>Haz clic para cerrar</p>
+  <button onclick="closeModal()">OK</button>
+</div>
+
+<script>
+  function showModal() {
+      document.getElementById('modal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+      
+      // Evitar que el formulario se envíe (recargar la página)
+      return false;
+  }
+
+  function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+  }
+</script>
+
+
+    <footer class="footer">
+        <ul class="social-icon">
+         <li class="icon-elem"> 
+          <a href="https://www.facebook.com/jesushenriquezmendez" target="_blank" class="icon"> <ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li class="icon-elem"> 
+            <a href="https://www.instagram.com/djesusbarbershop?igsh=MXVzb2JldW9qNmN2Zw==" target="_blank"
+             class="icon"> <ion-icon name="logo-instagram"></ion-icon> </a>
+            </li>
+            <li class="icon-elem"> 
+              <a href="https://wa.me/8293504412" target="_blank" class="icon"> <ion-icon name="logo-whatsapp"></ion-icon> </a>
+              </li>
+              <li class="icon-elem"> 
+                <a href="https://www.tiktok.com/@djesusbarbershop" target="_blank" class="icon"> <ion-icon name="logo-tiktok"></ion-icon> </a>
+                </li>
+                <li class="icon-elem"> 
+                  <a href="mailto:valeryhenriquez13@gmail.com" target="_blank" class="icon"> <ion-icon name="mail-outline"></ion-icon></a>
+                  </li>
+          </ul>
+        <ul class="menu">
+          <li class="menu-elem">
+           <a href="Index.html" class="menu-icon">Inicio</a>
+           </li>
+          <li class="menu-elem">
+           <a href="Nosotros.html" class="menu-icon">Nosotros</a>
+            </li>
+          <li class="menu-elem">
+           <a href="Servicios.html" class="menu-icon">Servicios</a>
+           </li>
+          <li class="menu-elem">
+           <a href="" class="menu-icon">Precio</a>
+           </li>
+          <li class="menu-elem">
+            <a href="Galeria.html" class="menu-icon">Galeria</a>
+            </li>
+            <li class="menu-elem">
+              <a href="Reservar.html" class="menu-icon">Resevar</a>
+              </li>
+              <li class="menu-elem">
+                <a href="Contactos.html" class="menu-icon">Contactos</a>
+                </li>
+
+            <li class="menu-elem">
+             <a href="Loginl.html" class="menu-icon">Login</a>
+             </li>
+            </ul>
+            <div class="Credit">Creado por <span> Lizmarlyn Valerio Henríquez</span> </div>
+            </footer>
+
+        </div>
+
+            <script
+            script type = "module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
+            <script
+         script  nomodule  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+</body>
+</html>
+

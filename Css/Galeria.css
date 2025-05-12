@@ -1,0 +1,208 @@
+/* Css/StyleG.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faf6f6; /* Color de fondo claro */
+    text-align: center; /* Alineación del texto */
+}
+
+.contenedorp{
+    width: 105%;
+}
+
+.contenedor{
+    width: 1380px;
+    height: 1100px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121; /* Color de fondo del encabezado */
+    color: rgb(248, 208, 132); /* Color del texto del encabezado */
+    padding:10px; /* Espaciado interno */
+    height: 80px;
+    box-shadow: 10px 0px 0px 10px rgba(000, 000, 000, 0.7);
+}
+
+h6 {
+    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 24px; /* Tamaño de fuente */
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+}
+
+nav ul li {
+    display: inline; /* Hace que los elementos de la lista estén en línea */
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+}
+
+nav a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+    transition: all 0.5s;
+}
+nav a:hover {
+    color:  rgb(252, 219, 157);
+    
+}
+button.Reservar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vmin;
+    font-weight: 600;
+    background-color: rgb(250, 196, 96); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    font-size:  15px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */                              
+    height: 50px;
+    width: 160px;
+    margin-right: 90px;
+}   
+
+button.Reservar a{
+    text-decoration: none;
+    color:white ;
+}
+
+button.Reservar:hover {
+    background-color: 
+    rgb(252, 205, 125); /* Cambia el color de fondo al pasar el ratón */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 35px;
+}
+p {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 5px;
+}
+
+.galeria-contenedor{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.galeria-contenedor img{
+    width: 100%; 
+    height: 280px;  
+    border-radius: 20px; 
+    color: 10px solid #000000;  
+    object-fit:unset; /* La imagen se ajusta sin recortarse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: all 0.3s;
+    justify-content: center;
+
+}
+
+.galeria-contenedor img:hover{
+    transform: scale(105%);
+}
+
+.galeria{
+    width: 340px;
+    height: 300px;  
+    margin-right: 20px;
+}
+
+.contenedorp .footer{
+    position: relative;
+    width: 93%;
+    height: 120px;
+    background: #212121;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px; 
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+    flex-wrap: wrap;
+}
+
+.icon-elem{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon{
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+    color:  rgb(252, 219, 157);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-elem{
+    list-style: none;
+}
+
+.menu-icon{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    transition: 0.3s;
+}
+
+.menu-icon:hover{
+   color:  rgb(252, 219, 157);
+}
+
+.Credit{
+    color: #fff;
+}
+
+.Credit span{
+ color:  rgb(252, 219, 157);
+}
+

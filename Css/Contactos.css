@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #212121;
+    height: auto;
+}
+
+.contenedorp{
+    width: 100%;
+    height: auto;
+    background-color: #212121;
+    }
+
+header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121; /* Color de fondo del encabezado */
+    color:  rgb(248, 208, 132); /* Color del texto del encabezado */
+    padding:10px; /* Espaciado interno */
+    box-shadow: 10px 0px 0px 10px rgba(000, 000, 000, 0.7);
+}
+
+h6 {
+    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 24px; /* Tamaño de fuente */
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+}
+
+nav ul li {
+    display: inline; /* Hace que los elementos de la lista estén en línea */
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+}
+
+nav a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+    transition: all 0.5s;
+}
+nav a:hover {
+    color:   rgb(248, 208, 132);
+    
+}
+button.Reservar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vmin;
+    font-weight: 600;
+    background-color:  rgb(248, 208, 132); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    font-size:  15px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */                                          
+    height: 50px;
+    width: 160px;
+    margin-right: 60px;
+}   
+
+button.Reservar a{
+    text-decoration: none;
+    color:white ;
+}
+
+button.Reservar:hover {
+    background-color: rgb(252, 205, 125);/* Cambia el color de fondo al pasar el ratón */
+}
+
+.contenedora{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .8), rgba(0 0 0 / .8)),url(/Img/fond.jpg);
+    height: 550px ;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 20px;
+    gap: 10px;
+    width: 1000px;
+    height: auto;
+}
+
+.box-info{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;  
+}
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color:rgb(248, 208, 132);
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: rgb(238, 192, 106); 
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i {
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.input-box{
+    position: relative;
+    margin-top: 10px;
+}
+
+.input-box > input{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba( 225 225 225 / .1);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: #fff;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus{
+    border-bottom: 3px solid  rgb(238, 192, 106);
+    animation: shake .2s; 
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color: #a3a3a3;
+}    
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color: transparent;
+}    
+
+.input-box > textarea{
+    width: 100%;
+    height: 130px;
+    background: rgba( 225 225 225 / .1);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+}
+
+.input-box > i {
+    color: rgba(225 225 225 / .3);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color: rgb(248, 208, 132);
+}
+
+form > button {
+    background: rgb(248, 208, 132);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+    transition: .2s;
+}
+
+form > button:hover, .links > a:hover {
+    background: rgb(225, 172, 74);
+} 
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(-10px);}
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.box-info {
+    gap: 15px;
+}
+
+.box-info > h1 {
+    font-size: 1.5rem;
+}
+
+.contenedorp .footer{
+    position: relative;
+    width: 93%;
+    height: s0;
+    background: #212121;
+    min-height: 90px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px; 
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.icon-elem{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon{
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+    color:  rgb(252, 219, 157);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-elem{
+    list-style: none;
+}
+
+.menu-icon{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    transition: 0.3s;
+}
+
+.menu-icon:hover{
+   color:  rgb(252, 219, 157);
+}
+
+.Credit{
+    color: #fff;
+}
+
+.Credit span{
+ color:  rgb(252, 219, 157);
+}
+
